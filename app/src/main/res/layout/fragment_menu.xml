@@ -97,6 +97,16 @@
             android:layout_marginLeft="16dp"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_marginTop="4dp"
+            android:id="@+id/gl_cubes"
+            android:text="GL Cubes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginTop="4dp"
             android:id="@+id/gl_rotating_pyramid"
             android:text="GL Rotating pyramid"
             android:layout_width="match_parent"

@@ -45,7 +45,6 @@ public class BasicPrimitiveGLRenderer implements GLSurfaceView.Renderer {
         int shader = GLES20.glCreateShader(type);
         GLES20.glShaderSource(shader, shaderCode);
         GLES20.glCompileShader(shader);
-
         return shader;
     }
 }

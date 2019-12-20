@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.r4sh33d.cgproject.ElementType;
 import com.r4sh33d.cgproject.R;
+import com.r4sh33d.cgproject.cube.CubeDetailsFragment;
 import com.r4sh33d.cgproject.pyramid.PyramidActivity;
 
 import butterknife.ButterKnife;
@@ -64,6 +65,10 @@ public class MenuFragment extends BaseFragment {
         replaceFragment(BasicPrimitiveFragment.newInstance(ElementType.POLYGONS));
     }
 
+    @OnClick(R.id.gl_cubes)
+    public void onClickCubes(){
+        replaceFragment(CubeDetailsFragment.newInstance());
+    }
 
     @OnClick(R.id.gl_rotating_pyramid)
     public void onClickRotatingPyramid(){

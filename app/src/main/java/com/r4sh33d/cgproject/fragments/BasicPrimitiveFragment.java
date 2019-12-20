@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatCheckBox;
@@ -36,9 +35,6 @@ import butterknife.OnClick;
 import timber.log.Timber;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class BasicPrimitiveFragment extends BaseFragment implements ColorChooserDialog.ColorCallback {
     @BindView(R.id.triangle_type_card_view_layout)
     CardView trianglesCardView;
@@ -80,7 +76,6 @@ public class BasicPrimitiveFragment extends BaseFragment implements ColorChooser
         fragment.setArguments(args);
         return fragment;
     }
-
 
     public BasicPrimitiveFragment() {
         // Required empty public constructor
@@ -134,7 +129,7 @@ public class BasicPrimitiveFragment extends BaseFragment implements ColorChooser
     }
 
 
-    void setTriangleCheckedChnagedListener() {
+    void setTriangleCheckedChangedListener() {
         trianglesRadioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             switch (trianglesRadioGroup.getCheckedRadioButtonId()) {
                 case R.id.equilateral_triangle_rb:
@@ -225,7 +220,7 @@ public class BasicPrimitiveFragment extends BaseFragment implements ColorChooser
 
     }
 
-    public void showDetailsDialog() {
+    public void  showDetailsDialog() {
         MaterialDialog materialDialog = new MaterialDialog.Builder(getContext())
                 .title(toolbarTitle)
                 .content(elementDetails)
@@ -272,7 +267,7 @@ public class BasicPrimitiveFragment extends BaseFragment implements ColorChooser
                         " In Euclidean geometry any three points, when non-collinear, determine a unique triangle and simultaneously, " +
                         "a unique plane (i.e. a two-dimensional Euclidean space).";
                 polygonCoords = VerticesProvider.RIGHT_ANGLED_TRIANGLE;
-                setTriangleCheckedChnagedListener();
+                setTriangleCheckedChangedListener();
                 break;
 
             case RECTANGLES:

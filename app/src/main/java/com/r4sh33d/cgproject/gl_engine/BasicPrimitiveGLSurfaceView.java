@@ -10,7 +10,7 @@ public  class BasicPrimitiveGLSurfaceView extends GLSurfaceView {
 
     private final BasicPrimitiveGLRenderer mRenderer;
 
-    public BasicPrimitiveGLSurfaceView(Context context , ElementType elementType, PolygonConfig polygonConfig){
+    public BasicPrimitiveGLSurfaceView(Context context , ElementType elementType, PolygonConfig polygonConfig) {
         super(context);
 
         // Create an OpenGL ES 2.0 context
