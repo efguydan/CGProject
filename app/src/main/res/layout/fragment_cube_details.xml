@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Menu"
-        tools:text="Configure the cube" />
+        android:text="Configure the cube" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/triangle_type_card_view_layout"
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Please select cube type" />
+                android:text="Please select cube movement type" />
 
             <RadioGroup
                 android:layout_marginTop="6dp"

@@ -7,4 +7,6 @@
     <string name="done">done</string>
     <string name="cancel">cancel</string>
     <string name="back">back</string>
+    <string name="cube_details">A cube has six square faces. Since OpenGL only knows about triangles, we’ll have to draw 12 triangles : two for each face. We just define our vertices in the same way as we did for the triangle</string>
+    <string name="key_controlled_interaction_details">Use the following keys to control the cube. \nI -> Decrease Speed on X-Axis\nP -> Increase Speed on X-Axis\nK -> Decrease Speed on Y-Axis\nO -> Increase Speed on Y-Axis\nA -> Decrease Zoom\nZ -> Increase Zoom</string>
 </resources>
